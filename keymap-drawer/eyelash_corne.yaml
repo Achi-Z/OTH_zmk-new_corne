@@ -9,11 +9,11 @@ layers:
   - $$mdi:arrow-up-bold$$
   - Y
   - U
-  - {t: '$$mdi:arrow-up-bold$$', h: I}
+  - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - A
   - S
   - D
