@@ -4,7 +4,7 @@ layers:
   - {t: Q, h: Alt+Q}
   - W
   - E
-  - R
+  - {t: R, h: Ctl+Y}
   - T
   - $$mdi:arrow-up-bold$$
   - Y
@@ -29,7 +29,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - Z
+  - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
