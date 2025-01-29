@@ -24,8 +24,9 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-&mt {
-    flavor = "tap-preferred"; //优先识别为点击而非长按
+&mt {					//###baserk###
+	flavor = "tap-preferred";	//优先识别为点击而非长按
+	tapping-term-ms = <500>;	//默认200ms，可据需要调整
 };
 
 / {
