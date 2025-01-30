@@ -1,9 +1,9 @@
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - {t: Q, h: Alt+Q}
-  - W
-  - E
+  - {t: Q, h: Alt+1}
+  - {t: W, h: Alt+2}
+  - {t: E, h: Alt+3}
   - {t: R, h: Ctl+Y}
   - T
   - $$mdi:arrow-up-bold$$
@@ -50,9 +50,9 @@ layers:
   - {t: HOME, h: END}
   NUMBER:
   - $$mdi:keyboard-esc$$
-  - {t: '1', h: Alt+1, s: '!'}
-  - {t: '2', h: Alt+2, s: '@'}
-  - {t: '3', h: Alt+3, s: '#'}
+  - {t: '1', h: Alt+Q, s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
