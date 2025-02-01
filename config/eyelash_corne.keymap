@@ -53,14 +53,14 @@
 
 
 
-        Xdot_dance_shift2shift: Xdot_dance_shift2capslock {
+        Xdot_shift2shift: Xdot_shift2shift {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Shift Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
         };
 
-        Xdot_dance_alt2capslock: Xdot_dance_alt2shift {
+        Xdot_alt2caps: Xdot_alt2caps {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Alt/Caps Lock Tap Dance";
             #binding-cells = <0>;
