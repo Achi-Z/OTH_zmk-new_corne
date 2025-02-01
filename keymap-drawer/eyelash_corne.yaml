@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&Xdot_dance_shift2capslock'
+  - '&Xdot_shift2shift'
   - {t: A, h: Ctl+A}
   - S
   - D
@@ -41,8 +41,8 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&Xdot_dance_shift2capslock'
-  - '&Xdot_dance_alt2shift'
+  - '&Xdot_shift2shift'
+  - '&Xdot_alt2caps'
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', type: enter}
