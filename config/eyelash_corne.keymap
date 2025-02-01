@@ -31,21 +31,43 @@
 
 / {
     behaviors {
-        Xdot_dance_shift2capslock: Xdot_dance_shift2capslock {
+//        Xdot_dance_shift2capslock: Xdot_dance_shift2capslock {
+//            compatible = "zmk,behavior-tap-dance";
+//            display-name = "Shift/Caps Lock Tap Dance";
+//            #binding-cells = <0>;
+//            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+//        };
+//
+//        Xdot_dance_alt2shift: Xdot_dance_alt2shift {
+//            compatible = "zmk,behavior-tap-dance";
+//            display-name = "Alt/Shift Tap Dance";
+//            #binding-cells = <0>;
+//
+//            //bindings = <&kp LEFT_ALT>, <&mod_morph_shift>;
+//
+//            bindings = <&kp LEFT_ALT>, <&sk LEFT_SHIFT>;
+//
+//            //tapping-term-ms = <200>;                        // 设置双击时间窗口
+//            //quick-tap-ms = <150>;                           // 短按时间
+//        };
+
+
+
+        Xdot_dance_shift2shift: Xdot_dance_shift2capslock {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
+            display-name = "Shift/Shift Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
         };
 
-        Xdot_dance_alt2shift: Xdot_dance_alt2shift {
+        Xdot_dance_alt2capslock: Xdot_dance_alt2shift {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Alt/Shift Tap Dance";
+            display-name = "Alt/Caps Lock Tap Dance";
             #binding-cells = <0>;
 
             //bindings = <&kp LEFT_ALT>, <&mod_morph_shift>;
 
-            bindings = <&kp LEFT_ALT>, <&sk LEFT_SHIFT>;
+            bindings = <&kp LEFT_ALT>, <&kp CAPS>;
 
             //tapping-term-ms = <200>;                        // 设置双击时间窗口
             //quick-tap-ms = <150>;                           // 短按时间
