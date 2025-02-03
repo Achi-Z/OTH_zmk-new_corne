@@ -70,6 +70,13 @@
             //tapping-term-ms = <200>;                        // 设置双击时间窗口
             //quick-tap-ms = <150>;                           // 短按时间
         };
+
+        Xdot_del2enter: Xdot_del2enter {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Delete/Delete Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&lt 3 DELETE>, <&kp ENTER>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
