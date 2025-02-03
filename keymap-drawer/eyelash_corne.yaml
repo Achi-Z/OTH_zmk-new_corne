@@ -17,7 +17,7 @@ layers:
   - {t: A, h: Ctl+A}
   - S
   - D
-  - F
+  - {t: F, h: Ctl+F}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -44,7 +44,7 @@ layers:
   - '&Xdot_shift2shift'
   - '&Xdot_alt2caps'
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn}
+  - '&Xdot_del2enter'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: HOME, h: END}
@@ -191,7 +191,7 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
