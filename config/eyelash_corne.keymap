@@ -75,7 +75,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Delete/Delete Tap Dance";
             #binding-cells = <0>;
-            bindings = <&lt 3 DELETE>, <&kp ENTER>;
+            bindings = <&lt 3 DELETE>, <&kp BSPC>,  <&kp ENTER>;
         };
     };
 
