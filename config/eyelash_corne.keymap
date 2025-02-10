@@ -78,7 +78,7 @@
             bindings = <&lt 3 DELETE>, <&kp BSPC>, <&kp ENTER>;
 
 //            tapping-term-ms = <200>;                        // 设置长按时间窗口
-//            quick-tap-ms = <160>;                           // 短按时间
+            quick-tap-ms = <160>;                           // 短按时间
         };
     };
 
