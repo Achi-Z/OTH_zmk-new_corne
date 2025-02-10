@@ -77,7 +77,7 @@
             #binding-cells = <0>;
             bindings = <&lt 3 DELETE>, <&kp BSPC>, <&kp ENTER>;
 
-            tapping-term-ms = <120>;                          // 设置双击时间窗口
+            tapping-term-ms = <160>;                          // 设置双击时间窗口
             //quick-tap-ms = <150>;                           // 短按时间
         };
     };
