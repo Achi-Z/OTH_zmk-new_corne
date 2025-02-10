@@ -45,7 +45,7 @@ layers:
   - '&Xdot_alt2caps'
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - '&Xdot_del2enter'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: HOME, h: END}
   NUMBER:
@@ -192,6 +192,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
