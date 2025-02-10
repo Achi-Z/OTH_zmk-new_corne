@@ -47,7 +47,7 @@
         //
         //            bindings = <&kp LEFT_ALT>, <&sk LEFT_SHIFT>;
         //
-        //            //tapping-term-ms = <200>;                        // 设置双击时间窗口
+        //            //tapping-term-ms = <200>;                        // 设置长按时间窗口
         //            //quick-tap-ms = <150>;                           // 短按时间
         //        };
 
@@ -67,7 +67,7 @@
 
             bindings = <&kp LEFT_ALT>, <&kp CAPS>;
 
-            //tapping-term-ms = <200>;                        // 设置双击时间窗口
+            //tapping-term-ms = <200>;                        // 设置长按时间窗口
             //quick-tap-ms = <150>;                           // 短按时间
         };
 
@@ -77,8 +77,8 @@
             #binding-cells = <0>;
             bindings = <&lt 3 DELETE>, <&kp BSPC>, <&kp ENTER>;
 
-            tapping-term-ms = <180>;                          // 设置双击时间窗口
-            //quick-tap-ms = <150>;                           // 短按时间
+            //tapping-term-ms = <200>;                        // 设置长按时间窗口
+            quick-tap-ms = <160>;                           // 短按时间
         };
     };
 
