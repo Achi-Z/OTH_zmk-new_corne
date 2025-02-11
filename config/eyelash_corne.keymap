@@ -80,6 +80,22 @@
             tapping-term-ms = <190>;                          // 设置双击时间窗口
             //quick-tap-ms = <150>;                           // 短按时间
         };
+
+        Xdot_E_combo: Xdot_E_combo {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "E with Alt3 and WinE";
+            #binding-cells = <0>;
+            bindings = <&mt LALT KP_N3 E>, <&kp LG(E)>;
+//            tapping-term-ms = <200>;
+        };
+
+        Xdot_R_combo: Xdot_R_combo {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "R with CtrlY and WinR";
+            #binding-cells = <0>;
+            bindings = <&mt LCTRL Y R>, <&kp LG(R)>;
+//            tapping-term-ms = <200>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
