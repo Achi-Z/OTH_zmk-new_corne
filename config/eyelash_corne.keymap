@@ -98,11 +98,11 @@
 //        };
 
         Xdot_R_combo: Xdot_R_combo {
-                    compatible = "zmk,behavior-tap-dance";
-                    display-name = "Delete/Delete Tap Dance";
-                    #binding-cells = <0>;
-                    bindings = <&lt 3 DELETE>, <&kp LG(R)>;
-                };
+              compatible = "zmk,behavior-tap-dance";
+              display-name = "Delete/Delete Tap Dance";
+              #binding-cells = <0>;
+              bindings = <&mt LC(Y) R>, <&kp LG(R)>;
+        };
 
 
     };
