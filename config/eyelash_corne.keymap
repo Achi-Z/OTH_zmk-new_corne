@@ -90,12 +90,21 @@
 //            //            tapping-term-ms = <200>;
 //        };
 
+//        Xdot_R_combo: Xdot_R_combo {
+//            compatible = "zmk,behavior-tap-dance";
+//            display-name = "R with CtrlY and WinR";
+//            #binding-cells = <0>;
+//            bindings = <&mt LCTRL Y R>, <&kp LG(R)>;
+//        };
+
         Xdot_R_combo: Xdot_R_combo {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "R with CtrlY and WinR";
-            #binding-cells = <0>;
-            bindings = <&mt LCTRL Y R>, <&kp LG(R)>;
-        };
+                    compatible = "zmk,behavior-tap-dance";
+                    display-name = "Delete/Delete Tap Dance";
+                    #binding-cells = <0>;
+                    bindings = <&lt 3 DELETE>, <&kp LG(R)>;
+                };
+
+
     };
 
     rgb_encoder: rgb_encoder {
