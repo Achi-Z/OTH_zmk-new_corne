@@ -86,7 +86,8 @@
             display-name = "E with Alt3 and WinE";
             #binding-cells = <0>;
             bindings = <&mt LALT KP_N3 E>, <&kp LG(E)>;
-//            tapping-term-ms = <200>;
+
+            //            tapping-term-ms = <200>;
         };
 
         Xdot_R_combo: Xdot_R_combo {
@@ -94,7 +95,8 @@
             display-name = "R with CtrlY and WinR";
             #binding-cells = <0>;
             bindings = <&mt LCTRL Y R>, <&kp LG(R)>;
-//            tapping-term-ms = <200>;
+
+            //            tapping-term-ms = <200>;
         };
     };
 
@@ -118,10 +120,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB            &mt LA(N1) Q  &mt LA(N2) W  &mt LA(N3) E    &mt LC(Y) R  &kp T                                &kp UP                &kp Y        &kp U        &kp I         &kp O    &kp P     &kp BSPC
-&Xdot_shift2shift  &mt LC(A) A   &kp S         &kp D           &mt LC(F) F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LCTRL          &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) V  &kp B      &kp LEFT_GUI              &kp DOWN              &kp N        &kp M        &kp COMMA     &kp DOT  &kp FSLH  &Xdot_shift2shift
-                                               &Xdot_alt2caps  &lt 1 SPACE  &lt 3 DEL                                                  &lt 3 ENTER  &lt 2 SPACE  &mt END HOME
+&kp TAB            &mt LA(N1) Q  &mt LA(N2) W  &Xdot_E_combo   &Xdot_R_combo  &kp T                                &kp UP                &kp Y        &kp U        &kp I         &kp O    &kp P     &kp BSPC
+&Xdot_shift2shift  &mt LC(A) A   &kp S         &kp D           &mt LC(F) F    &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LCTRL          &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) V    &kp B      &kp LEFT_GUI              &kp DOWN              &kp N        &kp M        &kp COMMA     &kp DOT  &kp FSLH  &Xdot_shift2shift
+                                               &Xdot_alt2caps  &lt 1 SPACE    &lt 3 DEL                                                  &lt 3 ENTER  &lt 2 SPACE  &mt END HOME
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
