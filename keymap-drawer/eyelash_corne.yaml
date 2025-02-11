@@ -3,7 +3,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: Q, h: Alt+1}
   - {t: W, h: Alt+2}
-  - '&Xdot_E_combo'
+  - E
   - '&Xdot_R_combo'
   - T
   - $$mdi:arrow-up-bold$$
