@@ -81,35 +81,35 @@
             //quick-tap-ms = <150>;                           // 短按时间
         };
 
-//        Xdot_E_combo: Xdot_E_combo {
-//            compatible = "zmk,behavior-tap-dance";
-//            display-name = "E with Alt3 and WinE";
-//            #binding-cells = <0>;
-//            bindings = <&mt LALT KP_N3 E>, <&kp LG(E)>;
-//
-//            //            tapping-term-ms = <200>;
-//        };
+        //        Xdot_E_combo: Xdot_E_combo {
+        //            compatible = "zmk,behavior-tap-dance";
+        //            display-name = "E with Alt3 and WinE";
+        //            #binding-cells = <0>;
+        //            bindings = <&mt LALT KP_N3 E>, <&kp LG(E)>;
+        //
+        //            //            tapping-term-ms = <200>;
+        //        };
+
         Xdot_E_combo: Xdot_E_combo {
-              compatible = "zmk,behavior-tap-dance";
-              display-name = "E with Alt3 and WinE";
-              #binding-cells = <0>;
-              bindings = <&mt LA(N3) E>, <&kp LG(E)>;
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "E with Alt3 and WinE";
+            #binding-cells = <0>;
+            bindings = <&mt LA(N3) E>, <&kp LG(E)>;
         };
 
-//        Xdot_R_combo: Xdot_R_combo {
-//            compatible = "zmk,behavior-tap-dance";
-//            display-name = "R with CtrlY and WinR";
-//            #binding-cells = <0>;
-//            bindings = <&mt LCTRL Y R>, <&kp LG(R)>;
-//        };
+        //        Xdot_R_combo: Xdot_R_combo {
+        //            compatible = "zmk,behavior-tap-dance";
+        //            display-name = "R with CtrlY and WinR";
+        //            #binding-cells = <0>;
+        //            bindings = <&mt LCTRL Y R>, <&kp LG(R)>;
+        //        };
+
         Xdot_R_combo: Xdot_R_combo {
-              compatible = "zmk,behavior-tap-dance";
-              display-name = "R with CtrlY and WinR";
-              #binding-cells = <0>;
-              bindings = <&mt LC(Y) R>, <&kp LG(R)>;
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "R with CtrlY and WinR";
+            #binding-cells = <0>;
+            bindings = <&mt LC(Y) R>, <&kp LG(R)>;
         };
-
-
     };
 
     rgb_encoder: rgb_encoder {
@@ -168,10 +168,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp ENTER       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&kp BSPC        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &bt BT_CLR_ALL  &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&studio_unlock  &sys_reset    &trans        &bootloader   &trans        &mkp MB5      &bt BT_CLR                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                            &trans        &trans        &trans                                                                       &trans       &trans     &trans
+&mt LA(ENTER) ENTER  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&kp BSPC             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &bt BT_CLR_ALL  &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&studio_unlock       &sys_reset    &trans        &bootloader   &trans        &mkp MB5      &bt BT_CLR                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                                 &trans        &trans        &trans                                                                       &trans       &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
