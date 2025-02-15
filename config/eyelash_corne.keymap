@@ -25,15 +25,15 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 &mt {
-//    flavor = "tap-preferred";	//优先识别为点击而非长按
+    flavor = "tap-preferred";	//优先识别为点击而非长按
 ////    hold-trigger-on-release=true;      //确保长按仅在释放时触发，避免短按延迟
 ////    tap-ms = <100>;             //将默认200ms降低到100ms
 //    tapping-term-ms = <500>;        //默认200ms，可据需要调整    :500
 //    quick-tap-ms = <100>;           //降低快速点按的判定时间,默认可能是200ms，减少到80ms试试
-	global-quick-tap;                   // 启用全局快速点按功能
-    quick-tap-ms = <100>;               // 设置快速点按窗口
-    hold-trigger-on-release;            // 在释放时才触发长按
     tapping-term-ms = <500>;            // 默认200ms，可据需要调整    :500
+    quick-tap-ms = <100>;               // 设置快速点按窗口
+	global-quick-tap;                   // 启用全局快速点按功能
+    hold-trigger-on-release;            // 在释放时才触发长按
 };
 
 / {
