@@ -26,7 +26,7 @@
 
 &mt {
     flavor = "tap-preferred";	//优先识别为点击而非长按
-    tapping-term-ms = <500>;	//默认200ms，可据需要调整    :500
+    tapping-term-ms = <200>;	//默认200ms，可据需要调整    :500
 };
 
 / {
