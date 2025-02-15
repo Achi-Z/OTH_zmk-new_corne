@@ -26,7 +26,7 @@
 
 &mt {
     flavor = "tap-preferred";	//优先识别为点击而非长按
-//    hold-trigger-on-release=y;      //确保长按仅在释放时触发，避免短按延迟
+    hold-trigger-on-release=y;      //确保长按仅在释放时触发，避免短按延迟
 //    tap-ms = <100>;             //将默认200ms降低到100ms
     tapping-term-ms = <500>;        //默认200ms，可据需要调整    :500
     quick-tap-ms = <100>;           //降低快速点按的判定时间,默认可能是200ms，减少到80ms试试
