@@ -24,16 +24,22 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+//rpi: require_prior_idle {
+// compatible = "zmk,behavior-hold-tap";
+// #binding-cells = <2>;
+// flavor = "tap-preferred";
+// tapping-term-ms = <200>;
+// quick-tap-ms = <200>;
+// require-prior-idle-ms = <125>;
+// bindings = <&kp>, <&kp>;
+//};
 &mt {
     flavor = "tap-preferred";	//优先识别为点击而非长按
-////    hold-trigger-on-release=true;      //确保长按仅在释放时触发，避免短按延迟
-////    tap-ms = <100>;             //将默认200ms降低到100ms
-//    tapping-term-ms = <500>;        //默认200ms，可据需要调整    :500
-//    quick-tap-ms = <100>;           //降低快速点按的判定时间,默认可能是200ms，减少到80ms试试
     tapping-term-ms = <500>;            // 默认200ms，可据需要调整   判断“敲击”和“长按”的关键时间阈值。值越大，需等待更长时间才能判断是长按
-    quick-tap-ms = <200>;               // 设置快速点按窗口          判断“快速敲击”的时间窗口。值越大，认为是快速敲击的时间就越长。
+    quick-tap-ms = <160>;               // 设置快速点按窗口          判断“快速敲击”的时间窗口。值越大，认为是快速敲击的时间就越长。
 	global-quick-tap;                   // 启用全局快速点按功能
     hold-trigger-on-release;            // 在释放时才触发长按
+    require-prior-idle-ms = <300>;      // 值越大，快速输入时hold越不易被激发
 };
 
 / {
