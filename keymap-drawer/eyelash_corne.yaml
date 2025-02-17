@@ -18,7 +18,7 @@ layers:
   - S
   - D
   - {t: F, h: Ctl+F}
-  - G
+  - {t: G, h: Ctl+G}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
