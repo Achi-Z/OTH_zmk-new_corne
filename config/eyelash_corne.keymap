@@ -130,8 +130,6 @@
             label = "XDOT_LAYERMORE_COMBO";
             #binding-cells = <0>;
             bindings = <&lt 4 HOME>, <&kp END>;
-
-            tapping-term-ms = <160>;
         };
     };
 
