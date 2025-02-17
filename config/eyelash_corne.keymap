@@ -33,11 +33,12 @@
 // require-prior-idle-ms = <125>;
 // bindings = <&kp>, <&kp>;
 //};
+
 &mt {
     flavor = "tap-preferred";	//优先识别为点击而非长按
     tapping-term-ms = <260>;            // 默认200ms，可据需要调整   判断“敲击”和“长按”的关键时间阈值。值越大，需等待更长时间才能判断是长按
     quick-tap-ms = <216>;               // 设置快速点按窗口          判断“快速敲击”的时间窗口。值越大，认为是快速敲击的时间就越长。
-	global-quick-tap;                   // 启用全局快速点按功能
+    global-quick-tap;                   // 启用全局快速点按功能
     hold-trigger-on-release;            // 在释放时才触发长按
     require-prior-idle-ms = <350>;      // 值越大，快速输入时hold越不易被激发
 };
@@ -145,10 +146,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB            &mt LA(N1) Q  &mt LA(N2) W  &Xdot_E_combo  &Xdot_R_combo  &kp T                                  &kp UP                &kp Y        &kp U        &kp I            &kp O    &kp P     &kp BSPC
-&Xdot_shift2shift  &mt LC(A) A   &kp S         &kp D          &mt LC(F) F    &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL          &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C    &mt LC(V) V    &kp B        &kp LEFT_GUI              &kp DOWN              &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp LEFT_GUI
-                                               &kp LEFT_ALT   &lt 1 SPACE    &lt 3 ENTER                                                  &lt 3 ENTER  &lt 2 SPACE  &kp RIGHT_SHIFT
+&kp TAB            &mt LA(N1) Q  &mt LA(N2) W  &mt LA(N3) E  &mt LC(Y) R  &kp T                                  &kp UP                &kp Y        &kp U        &kp I            &kp O    &kp P     &kp BSPC
+&Xdot_shift2shift  &mt LC(A) A   &kp S         &kp D         &mt LC(F) F  &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL          &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V  &kp B        &kp LEFT_GUI              &kp DOWN              &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp LEFT_GUI
+                                               &kp LEFT_ALT  &lt 1 SPACE  &lt 3 ENTER                                                  &lt 3 ENTER  &lt 2 SPACE  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -188,6 +189,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        more {
+            bindings = <
+&none         &none           &none           &kp LG(E)  &kp LG(R)        &none                   &none         &none   &none   &none   &none  &none  &none
+&kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT_ARROW  &none            &none  &none  &none  &none   &none   &none   &none  &none  &none
+&none         &none           &none           &none      &none            &none   &none           &none         &none   &none   &none   &none  &none  &none
+                                              &trans     &trans           &trans                                &trans  &trans  &trans
+            >;
         };
     };
 };
