@@ -165,10 +165,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp ESC  &mt LA(Q) N1           &kp N2          &kp N3        &kp N4           &kp N5                                  &mmv MOVE_UP                     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp BSPC
-&kp Y    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none   &none   &kp HOME  &kp PG_UP
-&kp P    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none   &none   &none   &kp END   &kp PG_DN
-                                                &trans        &trans           &trans                                                                   &trans  &trans  &trans
+&kp ESC  &kp LA(Q)              &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                &mmv MOVE_UP                     &none   &none   &none   &none  &none     &kp BSPC
+&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB5                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none   &none  &kp HOME  &kp PG_UP
+&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB4             &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none   &none   &none  &kp END   &kp PG_DN
+                                                &trans        &trans           &trans                                                                              &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -189,10 +189,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp DEL        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&kp BSPC       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &bt BT_CLR_ALL  &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&kp LG(LA(Z))  &none         &sys_reset    &bootloader   &none         &none         &bt BT_CLR                    &mmv MOVE_DOWN                   &trans  &none      &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                           &kp LA(END)   &trans        &trans                                                                       &trans  &trans     &trans
+&kp DEL        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6  &kp F7  &kp F8       &kp F9      &kp F10          &kp F11
+&kp BSPC       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &bt BT_CLR_ALL  &mmv MOVE_RIGHT  &none   &none   &none        &none       &kp PRINTSCREEN  &kp F12
+&kp LG(LA(Z))  &none         &sys_reset    &bootloader   &none         &none         &bt BT_CLR                    &mmv MOVE_DOWN                   &trans  &none   &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                           &kp LA(END)   &trans        &trans                                                                       &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -200,10 +200,10 @@
 
         MORE {
             bindings = <
-&kp ESC       &none           &none           &kp LG(E)  &kp LG(R)        &kp LS(PRINTSCREEN)                  &none         &none   &none   &none   &none  &none  &none
-&kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT_ARROW  &none                         &none  &none  &none  &none   &none   &none   &none  &none  &none
-&none         &none           &none           &none      &kp LA(F4)       &kp LC(W)            &none           &none         &none   &none   &none   &none  &none  &none
-                                              &trans     &trans           &trans                                             &trans  &trans  &trans
+&kp ESC       &kp N1  &kp N2  &kp N3  &kp N4      &kp N5                     &none         &none   &none   &none   &none  &none  &none
+&kp CAPSLOCK  &kp N0  &kp N9  &kp N8  &kp N7      &kp N6              &none  &none  &none  &none   &none   &none   &none  &none  &none
+&none         &none   &none   &none   &kp LA(F4)  &kp LC(W)  &none           &none         &none   &none   &none   &none  &none  &none
+                              &trans  &trans      &trans                                   &trans  &trans  &trans
             >;
         };
     };
