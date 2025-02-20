@@ -172,18 +172,6 @@
             >;
         };
 
-        symbol_layer {
-            display-name = "SYMBOL";
-            bindings = <
-&kp ESC  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans   &none         &mkp RCLK     &mkp MCLK  &mkp LCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans   &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &mt LA(TILDE) TILDE
-                                     &trans     &trans     &trans                                                                &kp RET    &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
@@ -191,6 +179,18 @@
 &kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mkp MCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
 &kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &mmv MOVE_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
                                                 &trans        &trans           &trans                                                                                     &mkp LCLK          &mkp MCLK          &mkp RCLK
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        symbol_layer {
+            display-name = "SYMBOL";
+            bindings = <
+&kp ESC  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans   &none         &mkp RCLK     &mkp MCLK  &mkp LCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans   &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &mt LA(TILDE) TILDE
+                                     &trans     &trans     &trans                                                                &kp RET    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
