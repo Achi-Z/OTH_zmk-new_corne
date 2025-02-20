@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Shift Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>, <&kp CAPSLOCK>;
+            bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
         };
 
         Xdot_alt2caps: Xdot_alt2caps {
