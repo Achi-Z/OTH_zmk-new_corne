@@ -225,8 +225,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+F4
-  - HOME
   - END
+  - HOME
   - PgUp
   - PgDn
   - Ctl+W
