@@ -56,11 +56,11 @@ layers:
   - Gui+R
   - Sft+PRINTSCREEN
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mmv MOVE_Y(300)'
+  - '&mmv MOVE_Y(-300)'
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-down$$
-  - '&mmv MOVE_X(300)'
+  - '&mmv MOVE_X(-300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Y
   - $$mdi:arrow-left-bold$$
@@ -85,11 +85,11 @@ layers:
   - '&mkp MB4'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&mmv MOVE_Y(-300)'
+  - '&mmv MOVE_Y(300)'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - '&mmv MOVE_X(-300)'
+  - '&mmv MOVE_X(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
