@@ -165,10 +165,10 @@
         lower_layer {
             display-name = "MOUSE";
             bindings = <
-&kp ESC  &kp LA(Q)              &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                &mmv MOVE_UP                     &msc SCRL_UP       &mmv MOVE_Y(-300)  &mmv MOVE_UP     &mkp MB4         &mkp MB5          &none
-&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mkp MCLK        &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &none
-&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                    &mmv MOVE_DOWN                   &msc SCRL_DOWN     &mmv MOVE_Y(300)   &mmv MOVE_DOWN   &mkp RCLK        &none             &none
-                                                &trans        &trans           &trans                                                                              &mkp LCLK          &msc SCRL_LEFT     &msc SCRL_RIGHT
+&kp ESC  &kp LA(Q)              &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                &mmv MOVE_UP                     &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
+&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mkp MCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
+&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                    &mmv MOVE_DOWN                   &none              &mmv MOVE_Y(300)   &mmv MOVE_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
+                                                &trans        &trans           &trans                                                                              &mkp LCLK          &mkp MCLK          &mkp RCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -191,8 +191,8 @@
             bindings = <
 &kp DEL        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6  &kp F7  &kp F8       &kp F9      &kp F10          &kp F11
 &kp BSPC       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &bt BT_CLR_ALL  &mmv MOVE_RIGHT  &none   &none   &none        &none       &kp PRINTSCREEN  &kp F12
-&kp LG(LA(Z))  &none         &sys_reset    &bootloader   &none         &none         &bt BT_CLR                    &mmv MOVE_DOWN                   &trans  &none   &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                           &kp LA(END)   &trans        &trans                                                                       &trans  &trans  &trans
+&kp LG(LA(Z))  &kp LA(END)   &sys_reset    &bootloader   &none         &none         &bt BT_CLR                    &mmv MOVE_DOWN                   &trans  &none   &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                           &none         &trans        &trans                                                                       &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -200,10 +200,10 @@
 
         NUMBER {
             bindings = <
-&kp ESC       &kp N1    &kp N2   &kp N3         &kp N4       &kp N5                          &none         &none   &none   &none   &none  &none  &none
-&kp CAPSLOCK  &kp N0    &kp N9   &kp N8         &kp N7       &kp N6                   &none  &none  &none  &none   &none   &none   &none  &none  &none
-&kp LA(F4)    &kp HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(W)  &kp C_MUTE           &none         &none   &none   &none   &none  &none  &none
-                                 &trans         &trans       &trans                                        &trans  &trans  &trans
+&kp ESC       &kp N1    &kp N2   &kp N3       &kp N4         &kp N5                          &none         &none   &none   &none   &none  &none  &none
+&kp CAPSLOCK  &kp N0    &kp N9   &kp N8       &kp N7         &kp N6                   &none  &none  &none  &none   &none   &none   &none  &none  &none
+&kp LA(F4)    &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(W)  &kp C_MUTE           &none         &none   &none   &none   &none  &none  &none
+                                 &trans       &trans         &trans                                        &trans  &trans  &trans
             >;
         };
     };
