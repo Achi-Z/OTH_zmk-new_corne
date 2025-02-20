@@ -56,47 +56,47 @@ layers:
   - Gui+R
   - Sft+PRINTSCREEN
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mmv MOVE_Y(-300)'
   - $$mdi:pan-up$$
+  - '&mmv MOVE_Y(-300)'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:pan-down$$
-  - '&mmv MOVE_X(-300)'
+  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Y
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&mkp MB5'
+  - '&mkp MB4'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:pan-left$$
+  - '&mmv MOVE_X(-300)'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:pan-right$$
+  - '&mmv MOVE_X(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - P
   - {t: Ins, h: Alt+Ins}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
-  - '&mkp MB4'
+  - '&mkp MB5'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
   - '&mmv MOVE_Y(300)'
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
-  - '&mmv MOVE_X(300)'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:pan-left$$
+  - $$mdi:pan-right$$
   SYMBOL:
   - $$mdi:keyboard-esc$$
   - '!'
