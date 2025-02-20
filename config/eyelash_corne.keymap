@@ -162,19 +162,17 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
-            display-name = "MOUSE";
+        number_layer {
+            display-name = "NUMBER";
             bindings = <
-&kp ESC  &kp LA(Q)              &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                &mmv MOVE_UP                     &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
-&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mkp MCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
-&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                    &mmv MOVE_DOWN                   &none              &mmv MOVE_Y(300)   &mmv MOVE_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
-                                                &trans        &trans           &trans                                                                              &mkp LCLK          &mkp MCLK          &mkp RCLK
+&kp ESC       &kp N1    &kp N2   &kp N3       &kp N4         &kp N5                          &none         &none   &none   &none   &none  &none  &none
+&kp CAPSLOCK  &kp N0    &kp N9   &kp N8       &kp N7         &kp N6                   &none  &none  &none  &none   &none   &none   &none  &none  &none
+&kp LA(F4)    &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(W)  &kp C_MUTE           &none         &none   &none   &none   &none  &none  &none
+                                 &trans       &trans         &trans                                        &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
+        symbol_layer {
             display-name = "SYMBOL";
             bindings = <
 &kp ESC  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
@@ -186,7 +184,19 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        mouse_layer {
+            display-name = "MOUSE";
+            bindings = <
+&kp ESC  &kp LA(Q)              &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                &mmv MOVE_UP                     &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
+&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mkp MCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
+&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                    &mmv MOVE_DOWN                   &none              &mmv MOVE_Y(300)   &mmv MOVE_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
+                                                &trans        &trans           &trans                                                                              &mkp LCLK          &mkp MCLK          &mkp RCLK
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        fn_layer {
             display-name = "Fn";
             bindings = <
 &kp DEL        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6  &kp F7  &kp F8       &kp F9      &kp F10          &kp F11
@@ -196,16 +206,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        NUMBER {
-            display-name = "NUMBER";
-            bindings = <
-&kp ESC       &kp N1    &kp N2   &kp N3       &kp N4         &kp N5                          &none         &none   &none   &none   &none  &none  &none
-&kp CAPSLOCK  &kp N0    &kp N9   &kp N8       &kp N7         &kp N6                   &none  &none  &none  &none   &none   &none   &none  &none  &none
-&kp LA(F4)    &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(W)  &kp C_MUTE           &none         &none   &none   &none   &none  &none  &none
-                                 &trans       &trans         &trans                                        &trans  &trans  &trans
-            >;
         };
     };
 };
