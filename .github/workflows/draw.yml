@@ -1,14 +1,14 @@
 name: Draw Keymap
 on:
 #  workflow_dispatch:
-#  push:
-#    paths:
-#      - "config/**"
-#      - .github/workflows/draw.yml
-#      - keymap_drawer.config.yaml
-  workflow_dispatch:
   push:
-    branches: [none]  # 这会创建一个永远不会触发的 push 事件
+    paths:
+      - "config/**"
+      - .github/workflows/draw.yml
+      - keymap_drawer.config.yaml
+  workflow_dispatch:
+#  push:
+#    branches: [none]  # 这会创建一个永远不会触发的 push 事件
 
 jobs:
   draw:
