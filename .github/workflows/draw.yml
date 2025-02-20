@@ -8,7 +8,7 @@ on:
 #      - keymap_drawer.config.yaml
   workflow_dispatch:
   push:
-    branches: [ none ]  # 这会创建一个永远不会触发的 push 事件
+    branches: [none]  # 这会创建一个永远不会触发的 push 事件
 
 jobs:
   draw:

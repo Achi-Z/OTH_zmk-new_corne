@@ -61,8 +61,8 @@
         //
         //            bindings = <&kp LEFT_ALT>, <&sk LEFT_SHIFT>;
         //
-        //            //tapping-term-ms = <200>;                        // 设置双击时间窗口
-        //            //quick-tap-ms = <150>;                           // 短按时间
+        //            //tapping-term-ms = <200>;                       // 设置双击时间窗口
+        //            //quick-tap-ms = <150>;                          // 短按时间
         //        };
 
         Xdot_shift2shift: Xdot_shift2shift {
