@@ -122,7 +122,7 @@ layers:
   - '&mmv MOVE_X(300)'
   - '&mmv MOVE_X(-300)'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mmv MOVE_X(300)'
   - $$mdi:pan-up$$
@@ -136,15 +136,15 @@ layers:
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_Y(300)'
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
   - $$mdi:pan-right$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', type: held}
+  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
   - $$mdi:mouse-right-click-outline$$
   SYMBOL:
   - $$mdi:keyboard-esc$$
