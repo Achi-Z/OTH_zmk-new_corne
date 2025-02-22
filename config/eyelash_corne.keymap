@@ -176,9 +176,9 @@
             display-name = "MOUSE";
             bindings = <
 &kp ESC  &kp LA(Q)              &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                   &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
-&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mkp MCLK       &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
-&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &mmv MOVE_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
-                                                &trans        &trans           &trans                                                                                     &mkp LCLK          &mkp MCLK          &mkp RCLK
+&kp Y    &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                           &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
+&kp P    &mt LA(INSERT) INSERT  &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp C_MUTE                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
+                                                &trans        &trans           &trans                                                                                     &mkp MCLK          &mkp LCLK          &mkp RCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
