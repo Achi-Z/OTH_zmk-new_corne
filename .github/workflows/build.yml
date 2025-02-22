@@ -1,15 +1,26 @@
-name: Build ZMK firmware
-on:
-  workflow_dispatch:
-  push:
-    paths-ignore:
-      - "keymap-drawer/**"
+#name: Build ZMK firmware
+#on:
 #  workflow_dispatch:
 #  push:
-#    branches: [none]  # 这会创建一个永远不会触发的 push 事件
+#    paths-ignore:
+#      - "keymap-drawer/**"
+##  workflow_dispatch:
+##  push:
+##    branches: [none]  # 这会创建一个永远不会触发的 push 事件
+#
+#jobs:
+#  build:
+#  if: github.event_name == 'workflow_dispatch'  # 仅在手动触发时运行
+#    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+name: Build ZMK firmware
+on:
+  workflow_dispatch:  # 手动触发
+  push:              # push 事件保留，但不会自动运行任务
+    paths-ignore:
+      - "keymap-drawer/**"
 
 jobs:
-#  build:
-#    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-  if: github.event_name == 'workflow_dispatch'  # 仅在手动触发时运行
+  build:
+    if: github.event_name == 'workflow_dispatch'  # 仅在手动触发时运行
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
