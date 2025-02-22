@@ -34,7 +34,7 @@ layers:
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
   - B
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -42,11 +42,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - $$mdi:apple-keyboard-shift$$
   NUMBER:
   - $$mdi:keyboard-esc$$
@@ -77,12 +77,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Alt+F4
+  - P
   - HOME
   - END
   - PgUp
   - PgDn
-  - Ctl+W
+  - Y
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -111,7 +111,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -126,13 +126,13 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mmv MOVE_X(300)'
   - $$mdi:pan-up$$
-  - P
-  - {t: Ins, h: Alt+Ins}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - '&mkp MB5'
-  - $$mdi:volume-off$$
+  - Gui+Alt+Z
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_Y(300)'
@@ -140,11 +140,11 @@ layers:
   - $$mdi:pan-left$$
   - $$mdi:pan-right$$
   - $$mdi:pan-down$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-scroll-wheel$$
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   SYMBOL:
   - $$mdi:keyboard-esc$$
@@ -189,11 +189,11 @@ layers:
   - '}'
   - '|'
   - {t: '~', h: Alt+~}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - $$mdi:backspace-reverse-outline$$
@@ -224,16 +224,16 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PRINTSCREEN
   - F12
-  - Gui+Alt+Z
-  - Alt+END
+  - Alt+F4
+  - Ctl+W
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:bluetooth-off$$
+  - {t: Ins, h: Alt+Ins}
+  - Alt+END
   - '&mmv MOVE_Y(100)'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
+  - BT CLR ALL
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLLLOCK
