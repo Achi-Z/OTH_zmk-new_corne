@@ -165,20 +165,20 @@
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&kp ESC       &kp N1    &kp N2   &kp N3       &kp N4         &kp N5                                &mmv MOVE_UP                     &none   &none   &none   &none  &none  &none
-&kp CAPSLOCK  &kp N0    &kp N9   &kp N8       &kp N7         &kp N6                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none   &none  &none  &none
-&kp P         &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp Y   &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none   &none   &none  &none  &none
-                                 &trans       &trans         &trans                                                                 &trans  &trans  &trans
+&kp ESC                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                &mmv MOVE_UP                     &none   &none   &none   &none  &none  &none
+&kp CAPSLOCK           &kp N0  &kp N9  &kp N8  &kp N7  &kp N6                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none   &none  &none  &none
+&mt LA(INSERT) INSERT  &none   &none   &kp P   &kp Y   &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none   &none   &none  &none  &none
+                                       &trans  &trans  &trans                                                                 &trans  &trans  &trans
             >;
         };
 
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&kp ESC  &kp LA(Q)       &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                      &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
-&none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                              &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
-&none    &none           &mkp RCLK       &mkp MCLK     &mkp LCLK        &mkp MB5             &kp LG(LA(Z))                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
-                                         &trans        &trans           &trans                                                                                        &mkp MCLK          &mkp LCLK          &mkp RCLK
+&kp ESC          &kp LA(Q)       &none           &kp LG(E)     &kp LG(R)        &kp LS(PRINTSCREEN)                                      &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
+&msc SCRL_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                              &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
+&msc SCRL_RIGHT  &kp HOME        &kp END         &kp PAGE_UP   &kp PAGE_DOWN    &mkp MB5             &kp LG(LA(Z))                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
+                                                 &trans        &trans           &trans                                                                                        &mkp MCLK          &mkp LCLK          &mkp RCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -199,10 +199,10 @@
         fn_layer {
             display-name = "Fn";
             bindings = <
-&kp DEL     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                                   &mmv MOVE_Y(-100)                    &kp F6      &kp F7          &kp F8       &kp F9      &kp F10          &kp F11
-&kp BSPC    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &mmv MOVE_X(-100)  &mkp LCLK          &mmv MOVE_X(100)  &none       &none           &none        &none       &kp PRINTSCREEN  &kp F12
-&kp LA(F4)  &kp LC(W)     &sys_reset    &bootloader   &none         &mt LA(INSERT) INSERT  &kp LA(END)                       &mmv MOVE_Y(100)                     &bt BT_CLR  &bt BT_CLR_ALL  &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                        &none         &trans        &trans                                                                                        &trans      &trans          &trans
+&kp DEL     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                          &mmv MOVE_Y(-100)                    &kp F6      &kp F7          &kp F8       &kp F9      &kp F10          &kp F11
+&kp BSPC    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                 &mmv MOVE_X(-100)  &mkp LCLK          &mmv MOVE_X(100)  &none       &none           &none        &none       &kp PRINTSCREEN  &kp F12
+&kp LA(F4)  &kp LC(W)     &sys_reset    &bootloader   &none         &none         &kp LA(END)                       &mmv MOVE_Y(100)                     &bt BT_CLR  &bt BT_CLR_ALL  &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                        &none         &trans        &trans                                                                               &trans      &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
