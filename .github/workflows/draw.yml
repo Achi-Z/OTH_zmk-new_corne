@@ -12,7 +12,7 @@ on:
 
 jobs:
   draw:
-    if: github.event_name == 'workflow_dispatch'  # 仅在手动触发时运行
+#    if: github.event_name == 'workflow_dispatch'  # 仅在手动触发时运行
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
