@@ -77,12 +77,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Ins, h: Alt+Ins}
-  - {t: ',', s: <}
-  - {t: '-', s: _}
-  - P
-  - Y
-  - {t: /, s: '?'}
+  - {t: Y, h: Alt+P}
+  - {t: '''', h: ;, s: '"'}
+  - {t: ',', h: ., s: <}
+  - {t: '-', h: /, s: _}
+  - {t: '[', h: ']', s: '{'}
+  - {t: (, h: )}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -100,10 +100,10 @@ layers:
   MOUSE:
   - {t: '$$mdi:backspace$$', type: backspace}
   - Alt+Q
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Ins, h: Alt+Ins}
   - Gui+E
   - Gui+R
-  - Sft+PRINTSCREEN
+  - '&PrintScreen2FastStone'
   - '&mmv MOVE_Y(-300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_Y(-300)'
