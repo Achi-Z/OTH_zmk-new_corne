@@ -185,10 +185,10 @@
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&kp BACKSPACE    &kp LA(Q)       &mt LA(INSERT) INSERT  &kp LG(E)     &kp LG(R)       &PrintScreen2FastStone                                      &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
-&msc SCRL_LEFT   &kp LEFT_ARROW  &kp RIGHT_ARROW        &kp UP_ARROW  &kp DOWN_ARROW  &mkp MB4                                 &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
-&msc SCRL_RIGHT  &kp HOME        &kp END                &kp PAGE_UP   &kp PAGE_DOWN   &mkp MB5                &kp LG(LA(Z))                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
-                                                        &trans        &trans          &trans                                                                                           &mkp MCLK          &mkp LCLK          &mkp RCLK
+&kp BACKSPACE    &kp LA(Q)       &mt LA(INSERT) INSERT  &kp LG(E)     &kp LG(R)        &PrintScreen2FastStone                                      &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
+&msc SCRL_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB4                                 &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
+&msc SCRL_RIGHT  &kp HOME        &kp END                &kp PAGE_UP   &kp PAGE_DOWN    &mkp MB5                &kp LG(LA(Z))                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
+                                                        &trans        &trans           &trans                                                                                           &mkp MCLK          &mkp LCLK          &mkp RCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
