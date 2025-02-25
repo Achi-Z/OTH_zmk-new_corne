@@ -131,6 +131,16 @@
             #binding-cells = <0>;
             bindings = <&lt 4 HOME>, <&kp END>;
         };
+
+        PrintScreen2FastStone: PrintScreen2FastStone {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PRINTSCREEN2FASTSTONE";
+            #binding-cells = <0>;
+            bindings =
+                <&mt LC(LS(PRINTSCREEN)) LS(PRINTSCREEN)>,
+                <&kp LC(PRINTSCREEN)>,
+                <&kp LC(LS(LA(PRINTSCREEN)))>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -165,20 +175,20 @@
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&kp ESC                &kp N1     &kp N2     &kp N3  &kp N4  &kp N5                                  &mmv MOVE_UP                     &none   &none   &none   &none  &none  &none
-&kp CAPSLOCK           &kp N0     &kp N9     &kp N8  &kp N7  &kp N6                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none   &none  &none  &none
-&mt LA(INSERT) INSERT  &kp COMMA  &kp MINUS  &kp P   &kp Y   &kp FSLH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none   &none   &none  &none  &none
-                                             &trans  &trans  &trans                                                                   &trans  &trans  &trans
+&kp ESC       &kp N1                      &kp N2            &kp N3           &kp N4                          &kp N5                                                                &mmv MOVE_UP                     &none   &none   &none   &none  &none  &none
+&kp CAPSLOCK  &kp N0                      &kp N9            &kp N8           &kp N7                          &kp N6                                                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none   &none  &none  &none
+&mt LA(P) Y   &mt SEMICOLON SINGLE_QUOTE  &mt PERIOD COMMA  &mt SLASH MINUS  &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none   &none   &none  &none  &none
+                                                            &trans           &trans                          &trans                                                                                                 &trans  &trans  &trans
             >;
         };
 
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&kp BACKSPACE    &kp LA(Q)       &none            &kp LG(E)     &kp LG(R)       &kp LS(PRINTSCREEN)                                      &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
-&msc SCRL_LEFT   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &mkp MB4                              &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
-&msc SCRL_RIGHT  &kp HOME        &kp END          &kp PAGE_UP   &kp PAGE_DOWN   &mkp MB5             &kp LG(LA(Z))                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
-                                                  &trans        &trans          &trans                                                                                        &mkp MCLK          &mkp LCLK          &mkp RCLK
+&kp BACKSPACE    &kp LA(Q)       &mt LA(INSERT) INSERT  &kp LG(E)     &kp LG(R)       &PrintScreen2FastStone                                      &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
+&msc SCRL_LEFT   &kp LEFT_ARROW  &kp RIGHT_ARROW        &kp UP_ARROW  &kp DOWN_ARROW  &mkp MB4                                 &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &msc SCRL_UP
+&msc SCRL_RIGHT  &kp HOME        &kp END                &kp PAGE_UP   &kp PAGE_DOWN   &mkp MB5                &kp LG(LA(Z))                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN
+                                                        &trans        &trans          &trans                                                                                           &mkp MCLK          &mkp LCLK          &mkp RCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
