@@ -111,12 +111,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-left$$
+  - PgUp
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&mkp MB4'
+  - $$mdi:pan-up$$
   - '&mmv MOVE_X(-300)'
   - $$mdi:mouse-left-click-outline$$
   - '&mmv MOVE_X(300)'
@@ -125,21 +125,21 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mmv MOVE_X(300)'
-  - $$mdi:pan-up$$
-  - $$mdi:pan-right$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgDn
   - HOME
   - END
-  - PgUp
-  - PgDn
-  - '&mkp MB5'
+  - $$mdi:pan-left$$
+  - $$mdi:pan-right$$
+  - $$mdi:pan-down$$
   - Gui+Alt+Z
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-left$$
-  - $$mdi:pan-right$$
-  - $$mdi:pan-down$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -228,8 +228,8 @@ layers:
   - Ctl+W
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mkp MB4'
+  - '&mkp MB5'
   - Alt+END
   - '&mmv MOVE_Y(100)'
   - $$mdi:bluetooth-off$$
