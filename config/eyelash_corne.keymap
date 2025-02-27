@@ -157,6 +157,18 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Combos2Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <43 44>;
+            layers = <0>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
