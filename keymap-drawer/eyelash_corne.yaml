@@ -244,3 +244,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [43, 44]
+  k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
