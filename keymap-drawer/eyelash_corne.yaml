@@ -57,7 +57,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Hyper+C
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+Alt+Z
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -83,7 +83,7 @@ layers:
   - {t: '-', h: /, s: _}
   - {t: '[', h: ']', s: '{'}
   - {t: (, h: )}
-  - $$mdi:volume-off$$
+  - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -132,7 +132,7 @@ layers:
   - $$mdi:pan-left$$
   - $$mdi:pan-right$$
   - $$mdi:pan-down$$
-  - Gui+Alt+Z
+  - {t: Ctl+1, s: Ctl+!}
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_Y(300)'
