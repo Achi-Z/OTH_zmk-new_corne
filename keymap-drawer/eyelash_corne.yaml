@@ -111,12 +111,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgUp
-  - $$mdi:arrow-left-bold$$
+  - '&mkp MB4'
+  - $$mdi:pan-left$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:pan-up$$
+  - $$mdi:pan-right$$
   - '&mmv MOVE_X(-300)'
   - $$mdi:mouse-left-click-outline$$
   - '&mmv MOVE_X(300)'
@@ -126,12 +126,12 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mmv MOVE_X(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgDn
+  - '&mkp MB5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
+  - $$mdi:arrow-down-bold$$
   - END
-  - $$mdi:pan-left$$
-  - $$mdi:pan-right$$
-  - $$mdi:pan-down$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+1, s: Ctl+!}
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -162,10 +162,10 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-left-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -180,7 +180,7 @@ layers:
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
@@ -228,8 +228,8 @@ layers:
   - Ctl+W
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+END
   - '&mmv MOVE_Y(100)'
   - $$mdi:bluetooth-off$$
