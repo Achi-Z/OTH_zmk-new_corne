@@ -41,7 +41,7 @@
     require-prior-idle-ms = <350>;      // 值越大，快速输入时hold越不易被激发
 };
 &sk {
-    release - after - ms = <2000>;
+    release-after-ms = <2000>;
 };
 
 / {
