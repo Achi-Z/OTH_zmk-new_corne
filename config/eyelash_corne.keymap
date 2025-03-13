@@ -40,6 +40,9 @@
     hold-trigger-on-release;            // 在释放时才触发长按
     require-prior-idle-ms = <350>;      // 值越大，快速输入时hold越不易被激发
 };
+&sk {
+    release - after - ms = <2000>;
+};
 
 / {
     behaviors {
