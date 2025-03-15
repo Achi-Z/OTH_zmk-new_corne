@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
 
-            tapping-term-ms = <360>;
+            tapping-term-ms = <650>;
         };
 
         Xdot_alt2caps: Xdot_alt2caps {
@@ -143,7 +143,7 @@
                 <&kp LC(PRINTSCREEN)>,
                 <&kp LC(LS(LA(PRINTSCREEN)))>;
 
-            tapping-term-ms = <360>;
+            tapping-term-ms = <650>;
         };
 
         Xdot_Fn_Dance: Xdot_Fn_Dance {
@@ -152,7 +152,7 @@
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp CAPSLOCK>;
 
-            tapping-term-ms = <360>;
+            tapping-term-ms = <650>;
         };
     };
 
