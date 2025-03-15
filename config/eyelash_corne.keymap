@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
 
-            tapping-term-ms = <650>;
+            tapping-term-ms = <1160>;
         };
 
         Xdot_alt2caps: Xdot_alt2caps {
@@ -152,7 +152,7 @@
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp CAPSLOCK>;
 
-            tapping-term-ms = <650>;
+            tapping-term-ms = <1160>;
         };
     };
 
