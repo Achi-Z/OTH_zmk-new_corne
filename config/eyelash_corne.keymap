@@ -218,8 +218,8 @@
             display-name = "MOUSE";
             bindings = <
 &kp BACKSPACE  &kp DELETE      &mt LA(INSERT) INSERT  &kp LG(E)        &kp LG(R)        &PrintScreen2FastStone                                   &mmv MOVE_Y(-300)                    &none              &mmv MOVE_Y(-300)  &mmv MOVE_UP    &none            &none             &none
-&kp CAPSLOCK   &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW     &kp RIGHT_ARROW  &mkp MB4                              &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &none
-&none          &kp HOME        &msc SCRL_LEFT         &msc SCRL_RIGHT  &kp END          &mkp MB5                &kp LC(N1)                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &none            &none             &none
+&kp HOME       &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW     &kp RIGHT_ARROW  &kp END                               &mmv MOVE_X(-300)  &mkp LCLK          &mmv MOVE_X(300)  &mmv MOVE_X(-300)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(300)  &none
+&kp CAPSLOCK   &mkp MB4        &msc SCRL_LEFT         &msc SCRL_RIGHT  &mkp MB5         &kp LA(END)             &kp LC(N1)                       &mmv MOVE_Y(300)                     &none              &mmv MOVE_Y(300)   &none           &none            &none             &none
                                                       &trans           &trans           &trans                                                                                        &mkp MCLK          &mkp LCLK          &mkp RCLK
             >;
 
