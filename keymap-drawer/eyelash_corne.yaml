@@ -112,12 +112,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-caps$$
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&mkp MB4'
+  - END
   - '&mmv MOVE_X(-300)'
   - $$mdi:mouse-left-click-outline$$
   - '&mmv MOVE_X(300)'
@@ -127,12 +127,12 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mmv MOVE_X(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - HOME
+  - $$mdi:apple-keyboard-caps$$
+  - '&mkp MB4'
   - $$mdi:pan-left$$
   - $$mdi:pan-right$$
-  - END
   - '&mkp MB5'
+  - Alt+END
   - {t: Ctl+1, s: Ctl+!}
   - '&mmv MOVE_Y(300)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
