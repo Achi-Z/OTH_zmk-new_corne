@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
 
-            tapping-term-ms = <1160>;
+            tapping-term-ms = <300>;
         };
 
         Xdot_alt2caps: Xdot_alt2caps {
@@ -193,10 +193,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&mt LEFT_ALT TAB  &mt LA(N1) Q  &mt LA(N2) W  &mt LA(N3) E  &mt LC(Y) R  &kp T                                &kp UP                &kp Y        &kp U        &kp I            &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT    &mt LC(A) A   &kp S         &kp D         &mt LC(F) F  &mt LC(G) G                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL         &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V  &mt LC(B) B  &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp LEFT_GUI
-                                              &lt 3 SPACE   &lt 1 SPACE  &lt 2 ENTER                                                &lt 4 ENTER  &lt 5 SPACE  &kp RIGHT_SHIFT
+&mt LEFT_ALT TAB   &mt LA(N1) Q  &mt LA(N2) W  &mt LA(N3) E  &mt LC(Y) R  &kp T                                &kp UP                &kp Y        &kp U        &kp I            &kp O    &kp P     &kp BSPC
+&Xdot_shift2shift  &mt LC(A) A   &kp S         &kp D         &mt LC(F) F  &mt LC(G) G                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL          &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V  &mt LC(B) B  &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp LEFT_GUI
+                                               &lt 3 SPACE   &lt 1 SPACE  &lt 2 ENTER                                                &lt 4 ENTER  &lt 5 SPACE  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -230,7 +230,7 @@
             bindings = <
 &kp BACKSPACE        &mt GRAVE EXCLAMATION           &mt TILDE AT_SIGN               &mt HASH ASTERISK           &mt DOLLAR AMPERSAND                    &mt CARET PERCENT                    &none         &none  &none  &none  &none  &none  &none
 &mt BACKSLASH SLASH  &mt SINGLE_QUOTE DOUBLE_QUOTES  &mt COMMA PERIOD                &mt UNDERSCORE MINUS        &mt PLUS EQUAL                          &mt SEMICOLON COLON           &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none                &mt RIGHT_BRACE LEFT_BRACE      &mt RIGHT_BRACKET LEFT_BRACKET  &mt GREATER_THAN LESS_THAN  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &none                &none           &none         &none  &none  &none  &none  &none  &none
+&sk LEFT_SHIFT       &mt RIGHT_BRACE LEFT_BRACE      &mt RIGHT_BRACKET LEFT_BRACKET  &mt GREATER_THAN LESS_THAN  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &none                &none           &none         &none  &none  &none  &none  &none  &none
                                                                                      &none                       &trans                                  &trans                                             &none  &none  &none
             >;
         };
