@@ -231,7 +231,7 @@ layers:
   - $$mdi:progress-download$$
   - Gui+Alt+Z
   - Ctl+Sft+B
-  - Alt+END
+  - {t: Meh+`, s: Meh+~}
   - '&mmv MOVE_Y(100)'
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
