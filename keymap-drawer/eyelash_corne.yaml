@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&Xdot_shift2shift'
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: A, h: Ctl+A}
   - S
   - D
@@ -43,11 +43,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER, type: held}
   - {t: '$$mdi:keyboard-return$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: QWERTY}
   - $$mdi:apple-keyboard-shift$$
   NUMBER:
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -196,55 +196,6 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Fn:
-  - $$mdi:keyboard-esc$$
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - '&mmv MOVE_Y(-100)'
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - Hyper+C
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - '&mmv MOVE_X(-100)'
-  - $$mdi:mouse-left-click-outline$$
-  - '&mmv MOVE_X(100)'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - OUT USB
-  - OUT BLE
-  - PRINTSCREEN
-  - F12
-  - Alt+F4
-  - Ctl+W
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - $$mdi:progress-download$$
-  - Gui+Alt+Z
-  - Ctl+Sft+B
-  - {t: Meh+`, s: Meh+~}
-  - '&mmv MOVE_Y(100)'
-  - $$mdi:bluetooth-off$$
-  - BT CLR ALL
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - SCROLLLOCK
-  - PAUSE BREAK
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:backspace$$', type: backspace}
   - '!'
@@ -288,15 +239,64 @@ layers:
   - '}'
   - '|'
   - {t: '~', h: Alt+~}
-  - {type: held alternate}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Fn:
+  - $$mdi:keyboard-esc$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '&mmv MOVE_Y(-100)'
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - Hyper+C
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
+  - $$mdi:mouse-left-click-outline$$
+  - BT CLR ALL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT USB
+  - OUT BLE
+  - PRINTSCREEN
+  - F12
+  - Alt+F4
+  - Ctl+W
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:progress-download$$
+  - Gui+Alt+Z
+  - Ctl+Sft+B
+  - {t: Meh+`, s: Meh+~}
+  - '&mmv MOVE_Y(100)'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - SCROLLLOCK
+  - PAUSE BREAK
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [43, 44]
   k: symbol2
   l: [QWERTY]
 - p: [43, 42]
-  k: SYMBOL
+  k: QWERTY
