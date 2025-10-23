@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: Ctl+A}
   - S
