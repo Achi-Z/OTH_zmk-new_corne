@@ -181,7 +181,7 @@ layers:
   - {t: '[', h: ']', s: '{'}
   - {t: <, h: '>'}
   - {t: (, h: )}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: PgUp, h: PgDn}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
